@@ -68,7 +68,7 @@ class SEN0460:
             print("I2C Read Failed!")
             return None  # Return None instead of -1
 
-# Create an I2C object with SCL (clock) on GPIO 45 and SDA (data) on GPIO 0
+# change the pins no.'s as per the connection of the sensor
 i2c = machine.SoftI2C(scl=machine.Pin(45), sda=machine.Pin(0))
 
 # Create an instance of the air quality sensor
